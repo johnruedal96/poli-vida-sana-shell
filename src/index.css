@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+/* Safety: Dashboard classes from remote mf-metrics */
+@layer components {
+  .dashboard-safety {
+    @apply grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-4 gap-6 gap-8;
+    @apply p-6 p-8 md:p-10 mb-1 mb-2 mb-6 mb-8 ml-2 mr-4 lg:ml-8 lg:mr-12 space-y-6;
+    @apply w-full h-full aspect-video lg:aspect-auto;
+    @apply text-[10px] text-xs text-sm text-xl text-2xl text-4xl font-light font-medium font-bold tracking-[0.05em] tracking-tight tracking-widest uppercase;
+    @apply text-neutral-500 text-on-surface text-primary text-primary-container text-white text-white/70;
+    @apply bg-surface-container-low bg-surface-container-lowest bg-gradient-to-t from-black/80 via-black/20 to-transparent;
+    @apply border border-outline-variant/15 rounded-[2rem] overflow-hidden relative absolute inset-0;
+    @apply transition-transform duration-700;
+    @apply flex flex-col items-center justify-between justify-end;
+    @apply object-cover;
+  }
+}
+
 @theme {
   --color-primary: #006d37;
   --color-primary-container: #2ecc71;
